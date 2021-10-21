@@ -1,0 +1,9 @@
+.book-summary {
+  max-height: 20px;
+  transition: 2s ease;
+  overflow: hidden;
+}
+.book-summary.open {
+  height: auto;
+  max-height: 40em;
+}

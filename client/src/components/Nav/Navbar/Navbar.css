@@ -1,0 +1,64 @@
+#mainNavbar {
+  margin: 0 0 0 0;
+  background-color: #c32aff;
+  filter: contrast(150%);
+  height: auto;
+  min-height: 3em;
+  box-shadow: 2em 0 2em #c32aff;
+}
+
+#logo {
+  margin: 5px 0 5px 5px;
+  width: 4em;
+  height: 4em;
+  fill: #4cd1e9;
+  transition: fill 0.4s ease;
+  overflow: visible;
+  transform: rotate(30deg);
+ 
+}
+
+#logo text {
+  animation: flicker 1.5s infinite alternate;
+}
+
+#logo:hover {
+  fill: #04d9ff;
+}
+
+#logo:hover * {
+  filter: drop-shadow(1em 1em 1em #04d9ff) contrast(200%);
+}
+
+#logo text {
+  font-weight: bold;
+  font-size: 16em;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.navElement {
+  background-color: yellow;
+  margin-right: 1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0 0.5em 0 0.5em;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}

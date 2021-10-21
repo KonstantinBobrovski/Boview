@@ -1,0 +1,16 @@
+#client
+client/build
+client/node_modules/
+client/README.md
+#server
+server/.env
+server/dist
+server/node_modules/
+server/README.md
+server/dist/*
+server/!/dist/v4
+server/!/dist/v5
+server/!/dist/v6
+server/!/dist/v7
+server/tmp
+server/out-tsc
