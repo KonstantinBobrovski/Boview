@@ -1,9 +1,88 @@
-.book-summary {
-  max-height: 20px;
-  transition: 2s ease;
-  overflow: hidden;
+.book-outer {
+    margin-top: 3em;
 }
+
+
+.book {
+    border: 4px solid #ff046d;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: .5em;
+}
+
+.book-info {
+    padding: .5em;
+}
+
+.book-summary {
+    max-height: 1em;
+    transition: 2s ease;
+    overflow: hidden;
+}
+
 .book-summary.open {
-  height: auto;
-  max-height: 40em;
+    height: auto;
+    max-height: 40em;
+}
+
+.book-header {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-bottom: .5em;
+}
+
+.book-title-wrapper {
+    grid-column: 1;
+    padding-left: 10px;
+}
+
+.btn-toogler {
+    grid-column: 2;
+}
+
+.checkbox_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+}
+
+input[type="checkbox"]+label {
+    transition: transform 2s ease;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+input[type="checkbox"]+label {
+    background: url('../../assets/svg/arrowUp.svg') no-repeat;
+    background-position: center; 
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 0 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked+label {
+    background: url('../../assets/svg/arrowUp.svg') no-repeat;
+    background-position: center; 
+    transform: scaleY(-1);
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 0 0 0 0px;
 }

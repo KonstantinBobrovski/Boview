@@ -1,27 +1,37 @@
-import { BrowserRouter, Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './book.css'
 import { useState } from 'react'
-export function Book (props) {
+export function Book(props) {
   const [isOpened, setOpened] = useState(false)
 
   return (
-    <div className='col-12 col-md-6 col-lg-4 border-end border-bottom  border-dark mt-3'>
-      <img className='w-100 h-auto' alt={props.book.title} src={props.book.cover}></img>
-      <div className='book-info'>
-        <p className='text-center'>
-          <h2> "{props.book.title}"</h2> от {props.book.Author}
-          <br />
-          <button onClick={() => setOpened(!isOpened)} className='btn-info'>
-            Покажи повече
-          </button>
-        </p>
-        <p className={`book-summary ${isOpened ? 'open' : ''}`}>
-          {props.book.summary}
+    <div className='book-outer'>
+      <div className='book mx-auto ms-1 me-1'>
+        <img className='w-100 h-auto' alt={props.book.title} src={props.book.cover}></img>
+        <div className='book-info'>
+          <div className='book-header'>
+            <div className='book-title-wrapper'>
+              <h2 className='fs-1'> "{props.book.title}"</h2> от <i><strong>{props.book.Author}</strong></i>
+            </div>
 
-          <p className='fs-3 link-primary mt-3'>Прочети отзив</p>
-        </p>
+            <div class="checkbox_wrapper">
+              <input class='checkbox' type='checkbox' onClick={() => setOpened(!isOpened)} className='btn btn-toogler' />
+
+              <label class='arrow'></label>
+            </div>
+
+
+
+
+          </div>
+          <p className={`book-summary ${isOpened ? 'open' : ''}`}>
+            {props.book.summary}
+
+            <p className='fs-3 link-primary mt-3'>Прочети отзив</p>
+          </p>
+        </div>
       </div>
+
     </div>
   )
 }

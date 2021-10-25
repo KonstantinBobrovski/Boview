@@ -1,0 +1,12 @@
+.books-collection {
+    display: flex;
+}
+
+.books-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.books-column:nth-child(2){
+    margin-top: 2em;
+}
