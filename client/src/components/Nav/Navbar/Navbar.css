@@ -1,16 +1,18 @@
 #mainNavbar {
   margin: 0 0 0 0;
-  background-color: #c32aff;
-  filter: contrast(150%);
+  background-color: rgb(17, 17, 17);
   height: auto;
   min-height: 3em;
-  box-shadow: 2em 0 2em #c32aff;
+  box-shadow: 0 0.5em 2em #9e2871;
   display: flex;
   justify-content: space-between;
 }
 
 #logo {
-  margin: 5px 0 5px 5px;
+
+  filter: contrast(150%);
+
+  margin:1em 1em 1em 5px;
   width: 4em;
   height: 4em;
   fill: #4cd1e9;

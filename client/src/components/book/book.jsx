@@ -11,7 +11,7 @@ export function Book(props) {
         <div className='book-info'>
           <div className='book-header'>
             <div className='book-title-wrapper'>
-              <h2 className='fs-1'> "{props.book.title}"</h2> от <i><strong>{props.book.Author}</strong></i>
+              <h2 > "{props.book.title}"</h2> от <span>{props.book.Author}</span>
             </div>
 
             <div class="checkbox_wrapper">

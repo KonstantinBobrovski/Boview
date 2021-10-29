@@ -13,8 +13,8 @@ export function BooksCollection(props) {
         id++;
         return {
             id,
-            title: 'Title',
-            summary: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+            title: 'Заглавие',
+            summary: 'Придя домой я достал телефон, и увидел что на часах всего 9 вечера. Прилипшая к телефону бумажка с номером телефона так и манила набрать номер, повернув её я прочёл имя - “Анжела”. Я набрал номер и после пары гудков услышал голос: “Алё, кто это?” “Вы мне оставили утром свой телефон и сказали утром позвонить” “А, поняла”, - усмехнулась она - “уже не терпится?” “Да” “Тогда громко и чётко попроси и я пришлю тебе адрес и указания” “Позвольте мне вылизать вашу киску, пожалуйста”, - громко сказал я. “Я смотрю ты полон энтузиазма”, - посмеялась она и добавила - “сохрани мой номер и каждый раз когда я звоню...',
             cover: 'https://images-eu.ssl-images-amazon.com/images/I/4167n959yuS._SY264_BO1,204,203,200_QL40_FMwebp_.jpg',
             Author: 'Циганин с меч'
         }
